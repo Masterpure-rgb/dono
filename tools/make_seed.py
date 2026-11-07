@@ -31,7 +31,7 @@ SHIOR = {
     9: ("Разноцветный мир — красивый мир!", "A colorful world is a beautiful world!"),
     10: ("Чистые руки — здоровый ребёнок!", "Clean hands, healthy kids!"),
     11: ("Делиться поровну — знак дружбы!", "Sharing equally is a sign of friendship!"),
-    12: ("На дороге будь осторожен — смотри на светофор!", "Be careful on the road — watch the traffic light!"),
+    12: ("Осторожно — смотри на светофор!", "Be careful — watch the traffic light!"),
 }
 GOAL = {
     1: ("Первым здороваться со старшим, приложив руку к груди. Правило: младший приветствует старшего, идущий — сидящего.",
