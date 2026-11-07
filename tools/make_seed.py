@@ -21,7 +21,7 @@ TITLES = {
 }
 SHIOR = {
     1: ("Здоровайтесь со старшими!", "Greet your elders!"),
-    2: ("Начинаем день по порядку!", "Let's start the day in order!"),
+    2: ("Начинаем день по порядку!", "Let’s start the day step by step!"),
     3: ("Вода — это жизнь, берегите её!", "Water is life — let's save it!"),
     4: ("Бережём хлеб!", "We treasure bread!"),
     5: ("Заботимся о птицах!", "We care for birds!"),
