@@ -1,5 +1,5 @@
 {
- "version": 4,
+ "version": 8,
  "settings": {
   "siteName": {
    "uz": "Odobli bolajonlar",
@@ -231,7 +231,9 @@
    "access": "free",
    "price": 0,
    "sources": {
-    "uz": "videos/uz/ep02.mp4"
+    "uz": "videos/uz/ep02.mp4",
+    "ru": "videos/ru/ep02.mp4",
+    "en": "videos/en/ep02.mp4"
    }
   },
   {
@@ -289,7 +291,9 @@
    "access": "free",
    "price": 0,
    "sources": {
-    "uz": "videos/uz/ep03.mp4"
+    "uz": "videos/uz/ep03.mp4",
+    "ru": "videos/ru/ep03.mp4",
+    "en": "videos/en/ep03.mp4"
    }
   },
   {
