@@ -1,5 +1,5 @@
 {
- "version": 8,
+ "version": 26,
  "settings": {
   "siteName": {
    "uz": "Odobli bolajonlar",
@@ -348,7 +348,9 @@
    "access": "free",
    "price": 0,
    "sources": {
-    "uz": "videos/uz/ep04.mp4"
+    "uz": "videos/uz/ep04.mp4",
+    "ru": "videos/ru/ep04.mp4",
+    "en": "videos/en/ep04.mp4"
    }
   },
   {
@@ -404,7 +406,9 @@
    "access": "login",
    "price": 0,
    "sources": {
-    "uz": "videos/uz/ep05.mp4"
+    "uz": "videos/uz/ep05.mp4",
+    "ru": "videos/ru/ep05.mp4",
+    "en": "videos/en/ep05.mp4"
    }
   },
   {
@@ -460,7 +464,9 @@
    "access": "login",
    "price": 0,
    "sources": {
-    "uz": "videos/uz/ep06.mp4"
+    "uz": "videos/uz/ep06.mp4",
+    "ru": "videos/ru/ep06.mp4",
+    "en": "videos/en/ep06.mp4"
    }
   },
   {
@@ -519,7 +525,9 @@
    "access": "login",
    "price": 0,
    "sources": {
-    "uz": "videos/uz/ep07.mp4"
+    "uz": "videos/uz/ep07.mp4",
+    "ru": "videos/ru/ep07.mp4",
+    "en": "videos/en/ep07.mp4"
    }
   },
   {
@@ -573,7 +581,9 @@
    "access": "login",
    "price": 0,
    "sources": {
-    "uz": "videos/uz/ep08.mp4"
+    "uz": "videos/uz/ep08.mp4",
+    "ru": "videos/ru/ep08.mp4",
+    "en": "videos/en/ep08.mp4"
    }
   },
   {
@@ -629,7 +639,9 @@
    "access": "paid",
    "price": 10,
    "sources": {
-    "uz": "videos/uz/ep09.mp4"
+    "uz": "videos/uz/ep09.mp4",
+    "ru": "videos/ru/ep09.mp4",
+    "en": "videos/en/ep09.mp4"
    }
   },
   {
@@ -683,7 +695,9 @@
    "access": "paid",
    "price": 10,
    "sources": {
-    "uz": "videos/uz/ep10.mp4"
+    "uz": "videos/uz/ep10.mp4",
+    "ru": "videos/ru/ep10.mp4",
+    "en": "videos/en/ep10.mp4"
    }
   },
   {
@@ -740,7 +754,9 @@
    "access": "paid",
    "price": 10,
    "sources": {
-    "uz": "videos/uz/ep11.mp4"
+    "uz": "videos/uz/ep11.mp4",
+    "ru": "videos/ru/ep11.mp4",
+    "en": "videos/en/ep11.mp4"
    }
   },
   {
@@ -793,7 +809,9 @@
    "access": "paid",
    "price": 10,
    "sources": {
-    "uz": "videos/uz/ep12.mp4"
+    "uz": "videos/uz/ep12.mp4",
+    "ru": "videos/ru/ep12.mp4",
+    "en": "videos/en/ep12.mp4"
    }
   }
  ],
