@@ -1,0 +1,864 @@
+{
+ "version": 1,
+ "settings": {
+  "siteName": {
+   "uz": "Odobli bolajonlar",
+   "ru": "Вежливые детки",
+   "en": "Polite Little Kids"
+  },
+  "welcomeBonus": 20,
+  "parentGate": true,
+  "autoplayNext": false,
+  "defaultLang": "uz",
+  "currencyName": {
+   "uz": "bilim",
+   "ru": "билим",
+   "en": "bilim"
+  },
+  "contactPhone": "",
+  "contactEmail": "",
+  "contactTelegram": "",
+  "announcement": {
+   "on": false,
+   "uz": "",
+   "ru": "",
+   "en": ""
+  },
+  "maintenance": false,
+  "hero": {
+   "title": {
+    "uz": "Kichkintoylar uchun odob va bilim",
+    "ru": "Вежливость и знания для малышей",
+    "en": "Manners and learning for little ones"
+   },
+   "subtitle": {
+    "uz": "3–7 yoshli bolalar uchun qisqa, xotirjam va milliy qadriyatlarga asoslangan multfilmlar. Har bir qismda bitta foydali saboq.",
+    "ru": "Короткие спокойные мультфильмы для детей 3–7 лет, основанные на национальных ценностях. В каждой серии — один полезный урок.",
+    "en": "Short, calm cartoons for children aged 3–7, rooted in Uzbek national values. One useful lesson in every episode."
+   },
+   "videoId": "ob-01"
+  },
+  "blocks": [
+   {
+    "id": "continue",
+    "type": "continue",
+    "visible": true
+   },
+   {
+    "id": "sec-odobli",
+    "type": "section",
+    "sectionId": "odobli-bolajonlar",
+    "visible": true
+   },
+   {
+    "id": "tariffs",
+    "type": "tariffs",
+    "visible": true
+   },
+   {
+    "id": "parents",
+    "type": "parents",
+    "visible": true
+   }
+  ]
+ },
+ "categories": {
+  "odob": {
+   "uz": "Odob",
+   "ru": "Этикет",
+   "en": "Manners",
+   "color": "#E07A5F"
+  },
+  "kun": {
+   "uz": "Kun tartibi",
+   "ru": "Режим дня",
+   "en": "Daily routine",
+   "color": "#3D8BB8"
+  },
+  "salomat": {
+   "uz": "Salomatlik",
+   "ru": "Здоровье",
+   "en": "Health",
+   "color": "#2A9D8F"
+  },
+  "math": {
+   "uz": "Matematika",
+   "ru": "Математика",
+   "en": "Math",
+   "color": "#8E6CC7"
+  },
+  "bilim": {
+   "uz": "Bilim",
+   "ru": "Знания",
+   "en": "Knowledge",
+   "color": "#E9A23B"
+  },
+  "xavf": {
+   "uz": "Xavfsizlik",
+   "ru": "Безопасность",
+   "en": "Safety",
+   "color": "#D1495B"
+  }
+ },
+ "sections": [
+  {
+   "id": "odobli-bolajonlar",
+   "order": 1,
+   "visible": true,
+   "color": "#2A9D8F",
+   "cover": "assets/img/hero.jpg",
+   "title": {
+    "uz": "Odobli bolajonlar",
+    "ru": "Вежливые детки",
+    "en": "Polite Little Kids"
+   },
+   "desc": {
+    "uz": "12 qismli turkum: odob, kun tartibi, salomatlik, sanash, shakl va ranglar.",
+    "ru": "Сериал из 12 серий: этикет, режим дня, здоровье, счёт, фигуры и цвета.",
+    "en": "A 12-episode series: manners, daily routine, health, counting, shapes and colors."
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "ob-01",
+   "sectionId": "odobli-bolajonlar",
+   "order": 1,
+   "published": true,
+   "title": {
+    "uz": "Salom — odob boshi",
+    "ru": "Привет — начало вежливости",
+    "en": "A Greeting Starts Good Manners"
+   },
+   "desc": {
+    "uz": "Kattaga birinchi bo‘lib, qo‘lni ko‘ksiga qo‘yib salom berish. Qoida: kichik kattaga, yurgan o‘tirganga salom beradi.",
+    "ru": "Первым здороваться со старшим, приложив руку к груди. Правило: младший приветствует старшего, идущий — сидящего.",
+    "en": "Greet an elder first, with a hand on the chest. Rule: the younger greets the older, the one walking greets the one sitting."
+   },
+   "slogan": {
+    "uz": "Kattalarga salom bering!",
+    "ru": "Здоровайтесь со старшими!",
+    "en": "Greet your elders!"
+   },
+   "questions": {
+    "uz": [
+     "Bobur nega to‘xtadi?",
+     "Salom berganda qo‘l qayerga qo‘yiladi?",
+     "Kim birinchi salom beradi: kichikmi yoki kattami?"
+    ],
+    "ru": [
+     "Почему Бобур остановился?",
+     "Куда кладут руку, когда здороваются?",
+     "Кто здоровается первым: младший или старший?"
+    ],
+    "en": [
+     "Why did Bobur stop?",
+     "Where do we put our hand when we greet?",
+     "Who greets first: the younger or the older?"
+    ]
+   },
+   "activity": {
+    "uz": "Bolalar juft bo‘lib salomlashish o‘yinini o‘ynaydi.",
+    "ru": "Дети играют в приветствие парами.",
+    "en": "Children play a greeting game in pairs."
+   },
+   "words": [
+    "salom",
+    "assalomu alaykum",
+    "barakalla"
+   ],
+   "cat": "odob",
+   "age": "3–7",
+   "duration": "1:09",
+   "poster": "assets/posters/ep01.jpg",
+   "access": "free",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep01.mp4"
+   }
+  },
+  {
+   "id": "ob-02",
+   "sectionId": "odobli-bolajonlar",
+   "order": 2,
+   "published": true,
+   "title": {
+    "uz": "Erta turamiz!",
+    "ru": "Встаём рано!",
+    "en": "Rise and Shine!"
+   },
+   "desc": {
+    "uz": "Ertalabki 5 qadamni tartib bilan bajarish: turish va ko‘rpani yig‘ish, yuvinish, tish yuvish, badantarbiya, nonushta. Qo‘shimcha: 1 dan 5 gacha sanash.",
+    "ru": "Выполнять 5 утренних шагов по порядку: встать и заправить постель, умыться, почистить зубы, зарядка, завтрак. Дополнительно: счёт от 1 до 5.",
+    "en": "Do the 5 morning steps in order: get up and make the bed, wash, brush teeth, exercise, have breakfast. Extra: counting from 1 to 5."
+   },
+   "slogan": {
+    "uz": "Kunni tartib bilan boshlaymiz!",
+    "ru": "Начинаем день по порядку!",
+    "en": "Let's start the day in order!"
+   },
+   "questions": {
+    "uz": [
+     "Ertalab birinchi nima qilamiz?",
+     "Tishni qanday yuvamiz?"
+    ],
+    "ru": [
+     "Что мы делаем утром в первую очередь?",
+     "Как мы чистим зубы?"
+    ],
+    "en": [
+     "What do we do first in the morning?",
+     "How do we brush our teeth?"
+    ]
+   },
+   "activity": {
+    "uz": "5 ta rasmni ertalabki tartib bo‘yicha joylashtirish.",
+    "ru": "Разложить 5 картинок в порядке утреннего распорядка.",
+    "en": "Put 5 pictures in the order of the morning routine."
+   },
+   "words": [
+    "tong",
+    "badantarbiya",
+    "nonushta",
+    "Osh bo‘lsin!"
+   ],
+   "cat": "kun",
+   "age": "3–7",
+   "duration": "1:46",
+   "poster": "assets/posters/ep02.jpg",
+   "access": "free",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep02.mp4"
+   }
+  },
+  {
+   "id": "ob-03",
+   "sectionId": "odobli-bolajonlar",
+   "order": 3,
+   "published": true,
+   "title": {
+    "uz": "Suv — hayot",
+    "ru": "Вода — это жизнь",
+    "en": "Water Is Life"
+   },
+   "desc": {
+    "uz": "Chanqaganda toza suvni o‘tirib, qultumlab ichish va suvni isrof qilmaslik (jo‘mrakni berkitish).",
+    "ru": "Пить чистую воду, когда хочется пить, сидя и маленькими глотками; не тратить воду зря (закрывать кран).",
+    "en": "Drink clean water when thirsty, sitting down and in small sips; don't waste water (turn off the tap)."
+   },
+   "slogan": {
+    "uz": "Suv — hayot, uni asraylik!",
+    "ru": "Вода — это жизнь, берегите её!",
+    "en": "Water is life — let's save it!"
+   },
+   "questions": {
+    "uz": [
+     "Gul nega so‘lib qoldi?",
+     "Chanqaganda nima ichamiz?",
+     "Jo‘mrak ochiq qolsa nima bo‘ladi?"
+    ],
+    "ru": [
+     "Почему завял цветок?",
+     "Что мы пьём, когда хочется пить?",
+     "Что будет, если кран останется открытым?"
+    ],
+    "en": [
+     "Why did the flower wilt?",
+     "What do we drink when we are thirsty?",
+     "What happens if the tap is left open?"
+    ]
+   },
+   "activity": {
+    "uz": "Qo‘lyuvgich oldida jo‘mrakni ochib-berkitishni mashq qilish, bir stakan suvni qultumlab ichish.",
+    "ru": "У умывальника потренироваться открывать и закрывать кран; выпить стакан воды сидя, маленькими глотками.",
+    "en": "Practice turning the tap on and off at the washstand; drink a glass of water sitting down, in small sips."
+   },
+   "words": [
+    "chanqoq",
+    "qultum",
+    "jo‘mrak",
+    "tejash"
+   ],
+   "cat": "salomat",
+   "age": "3–7",
+   "duration": "1:44",
+   "poster": "assets/posters/ep03.jpg",
+   "access": "free",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep03.mp4"
+   }
+  },
+  {
+   "id": "ob-04",
+   "sectionId": "odobli-bolajonlar",
+   "order": 4,
+   "published": true,
+   "title": {
+    "uz": "Buvijonning nonlari",
+    "ru": "Бабушкины лепёшки",
+    "en": "Grandma's Bread"
+   },
+   "desc": {
+    "uz": "1 dan 5 gacha sanash va 5 ichida qo‘shish: 2 + 1 = 3, 3 + 2 = 5. Tarbiyaviy maqsad: nonni e’zozlash, yerga tushgan nonni ko‘tarib, baland joyga qo‘yish.",
+    "ru": "Счёт от 1 до 5 и сложение в пределах 5: 2 + 1 = 3, 3 + 2 = 5. Воспитательная цель: бережное отношение к хлебу.",
+    "en": "Counting from 1 to 5 and adding within 5: 2 + 1 = 3, 3 + 2 = 5. Values: treating bread with respect."
+   },
+   "slogan": {
+    "uz": "Nonni e’zozlaymiz!",
+    "ru": "Бережём хлеб!",
+    "en": "We treasure bread!"
+   },
+   "questions": {
+    "uz": [
+     "Savatda nechta non bo‘ldi?",
+     "Non yerga tushsa nima qilamiz?"
+    ],
+    "ru": [
+     "Сколько лепёшек стало в корзине?",
+     "Что мы делаем, если хлеб упал на землю?"
+    ],
+    "en": [
+     "How many breads are in the basket now?",
+     "What do we do if bread falls on the ground?"
+    ]
+   },
+   "activity": {
+    "uz": "Haqiqiy narsalar (qoshiq, kubik, o‘yinchoq non) bilan 2 + 1 va 3 + 2 ni bajarish.",
+    "ru": "Выполнить 2 + 1 и 3 + 2 с настоящими предметами (ложки, кубики, игрушечный хлеб).",
+    "en": "Do 2 + 1 and 3 + 2 with real objects (spoons, blocks, toy bread)."
+   },
+   "words": [
+    "tandir",
+    "savat",
+    "qo‘shamiz",
+    "nechta bo‘ldi?"
+   ],
+   "cat": "math",
+   "age": "5–7",
+   "duration": "1:55",
+   "poster": "assets/posters/ep04.jpg",
+   "access": "free",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep04.mp4"
+   }
+  },
+  {
+   "id": "ob-05",
+   "sectionId": "odobli-bolajonlar",
+   "order": 5,
+   "published": true,
+   "title": {
+    "uz": "Chumchuqlar sanog‘i",
+    "ru": "Считаем воробьёв",
+    "en": "Counting Sparrows"
+   },
+   "desc": {
+    "uz": "5 ichida ayirish: 5 − 2 = 3, 3 − 1 = 2; «qoldi» so‘zining ma’nosi. Tarbiyaviy maqsad: qushlarni qo‘rqitmaslik, ularga don va suv qo‘yish.",
+    "ru": "Вычитание в пределах 5: 5 − 2 = 3, 3 − 1 = 2; значение слова «осталось». Воспитательная цель: не пугать птиц, оставлять им корм и воду.",
+    "en": "Subtracting within 5: 5 − 2 = 3, 3 − 1 = 2; the meaning of “left”. Values: not scaring birds, leaving them grain and water."
+   },
+   "slogan": {
+    "uz": "Qushlarga g‘amxo‘rlik qilamiz!",
+    "ru": "Заботимся о птицах!",
+    "en": "We care for birds!"
+   },
+   "questions": {
+    "uz": [
+     "Shoxda nechta chumchuq qoldi?",
+     "Qushlarga qanday g‘amxo‘rlik qilamiz?"
+    ],
+    "ru": [
+     "Сколько воробьёв осталось на ветке?",
+     "Как мы заботимся о птицах?"
+    ],
+    "en": [
+     "How many sparrows are left on the branch?",
+     "How do we take care of birds?"
+    ]
+   },
+   "activity": {
+    "uz": "Barmoq o‘yini: «5 ta barmoq — 2 tasini buk — nechta qoldi?»",
+    "ru": "Пальчиковая игра: «5 пальцев — 2 загни — сколько осталось?»",
+    "en": "Finger game: “5 fingers — fold 2 — how many are left?”"
+   },
+   "words": [
+    "chumchuq",
+    "shox",
+    "uchib ketdi",
+    "qoldi",
+    "ayiramiz"
+   ],
+   "cat": "math",
+   "age": "5–7",
+   "duration": "1:38",
+   "poster": "assets/posters/ep05.jpg",
+   "access": "login",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep05.mp4"
+   }
+  },
+  {
+   "id": "ob-06",
+   "sectionId": "odobli-bolajonlar",
+   "order": 6,
+   "published": true,
+   "title": {
+    "uz": "Shirin uyqu",
+    "ru": "Сладкий сон",
+    "en": "Sweet Dreams"
+   },
+   "desc": {
+    "uz": "Kechki tartib: o‘yinchoqlarni yig‘ish, tish yuvish, uxlashdan oldin telefonni qo‘yish, erta yotish. Qo‘shimcha: 4 gacha sanash.",
+    "ru": "Вечерний распорядок: собрать игрушки, почистить зубы, отложить телефон перед сном, рано лечь спать. Дополнительно: счёт до 4.",
+    "en": "Evening routine: tidy up toys, brush teeth, put the phone away before bed, go to bed early. Extra: counting to 4."
+   },
+   "slogan": {
+    "uz": "Erta yotgan erta turar!",
+    "ru": "Рано ложишься — рано встаёшь!",
+    "en": "Early to bed, early to rise!"
+   },
+   "questions": {
+    "uz": [
+     "Uxlashdan oldin nimalar qilamiz?",
+     "Nega telefon ham «uxlaydi»?"
+    ],
+    "ru": [
+     "Что мы делаем перед сном?",
+     "Почему телефон тоже «спит»?"
+    ],
+    "en": [
+     "What do we do before bed?",
+     "Why does the phone “sleep” too?"
+    ]
+   },
+   "activity": {
+    "uz": "Ketma-ketlikni rasmlar bilan tuzish: o‘yinchoq → tish → alla → uyqu. Bu dars 2-dars bilan juft: biri tongni, biri kechni o‘rgatadi.",
+    "ru": "Составить последовательность по картинкам: игрушки → зубы → колыбельная → сон.",
+    "en": "Make a picture sequence: toys → teeth → lullaby → sleep."
+   },
+   "words": [
+    "kech",
+    "oy",
+    "yulduz",
+    "alla",
+    "Xayrli tun!"
+   ],
+   "cat": "kun",
+   "age": "3–7",
+   "duration": "1:34",
+   "poster": "assets/posters/ep06.jpg",
+   "access": "login",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep06.mp4"
+   }
+  },
+  {
+   "id": "ob-07",
+   "sectionId": "odobli-bolajonlar",
+   "order": 7,
+   "published": true,
+   "title": {
+    "uz": "Bozorda taqqoslaymiz",
+    "ru": "Сравниваем на базаре",
+    "en": "Comparing at the Bazaar"
+   },
+   "desc": {
+    "uz": "Narsalarni kattaligi (katta–kichik) va miqdori (ko‘p–oz) bo‘yicha taqqoslash; 5 gacha sanash.",
+    "ru": "Сравнивать предметы по величине (большой–маленький) и количеству (много–мало); счёт до 5.",
+    "en": "Compare objects by size (big–small) and amount (more–fewer); counting to 5."
+   },
+   "slogan": {
+    "uz": "Kattaga hurmat, kichikka izzat!",
+    "ru": "Уважай старших, береги младших!",
+    "en": "Respect elders, care for the little ones!"
+   },
+   "questions": {
+    "uz": [
+     "Qaysi qovun katta?",
+     "Qaysi likopchada olma ko‘p?",
+     "Bozorda sotuvchiga nima deymiz?"
+    ],
+    "ru": [
+     "Какая дыня больше?",
+     "На какой тарелке больше яблок?",
+     "Что мы говорим продавцу на базаре?"
+    ],
+    "en": [
+     "Which melon is bigger?",
+     "Which plate has more apples?",
+     "What do we say to the seller at the bazaar?"
+    ]
+   },
+   "activity": {
+    "uz": "Ikki likopchaga turli miqdorda meva yoki kubik qo‘yib, «ko‘p–oz»ni; ikki xil kattalikdagi narsalarni «katta–kichik» deb taqqoslash.",
+    "ru": "Положить на две тарелки разное количество фруктов или кубиков и сравнить «много–мало», «большой–маленький».",
+    "en": "Put different numbers of fruits or blocks on two plates and compare “more–fewer”, “big–small”."
+   },
+   "words": [
+    "bozor",
+    "katta",
+    "kichik",
+    "ko‘p",
+    "oz"
+   ],
+   "cat": "math",
+   "age": "3–7",
+   "duration": "1:38",
+   "poster": "assets/posters/ep07.jpg",
+   "access": "login",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep07.mp4"
+   }
+  },
+  {
+   "id": "ob-08",
+   "sectionId": "odobli-bolajonlar",
+   "order": 8,
+   "published": true,
+   "title": {
+    "uz": "Somsa — uchburchak",
+    "ru": "Самса — треугольник",
+    "en": "Somsa Is a Triangle"
+   },
+   "desc": {
+    "uz": "Doira, uchburchak va to‘rtburchakni tanish; tomonlarini sanash.",
+    "ru": "Узнавать круг, треугольник и прямоугольник; считать их стороны.",
+    "en": "Recognize a circle, a triangle and a rectangle; count their sides."
+   },
+   "slogan": {
+    "uz": "Atrofga qara — shaklni top!",
+    "ru": "Оглянись — найди фигуру!",
+    "en": "Look around — find the shape!"
+   },
+   "questions": {
+    "uz": [
+     "Somsaning nechta tomoni bor?",
+     "Xonamizda qaysi narsalar doira shaklida?"
+    ],
+    "ru": [
+     "Сколько сторон у самсы?",
+     "Какие предметы в комнате круглые?"
+    ],
+    "en": [
+     "How many sides does a somsa have?",
+     "Which things in the room are round?"
+    ]
+   },
+   "activity": {
+    "uz": "Shakl ovi: xonadan doira, uchburchak va to‘rtburchak shaklidagi narsalarni topish; havoda barmoq bilan doira chizish.",
+    "ru": "Охота за фигурами: найти в комнате круглые, треугольные и прямоугольные предметы.",
+    "en": "Shape hunt: find round, triangular and rectangular things in the room."
+   },
+   "words": [
+    "doira",
+    "uchburchak",
+    "to‘rtburchak"
+   ],
+   "cat": "bilim",
+   "age": "3–7",
+   "duration": "2:10",
+   "poster": "assets/posters/ep08.jpg",
+   "access": "login",
+   "price": 0,
+   "sources": {
+    "uz": "videos/uz/ep08.mp4"
+   }
+  },
+  {
+   "id": "ob-09",
+   "sectionId": "odobli-bolajonlar",
+   "order": 9,
+   "published": true,
+   "title": {
+    "uz": "Atlas ranglari",
+    "ru": "Цвета атласа",
+    "en": "Colors of Atlas Silk"
+   },
+   "desc": {
+    "uz": "To‘rt rangni (qizil, sariq, yashil, ko‘k) tanish va nomlash; milliy mato — atlas bilan tanishish.",
+    "ru": "Узнавать и называть четыре цвета (красный, жёлтый, зелёный, синий); знакомство с национальной тканью — атласом.",
+    "en": "Recognize and name four colors (red, yellow, green, blue); meet the national fabric — atlas silk."
+   },
+   "slogan": {
+    "uz": "Rang-barang dunyo — go‘zal dunyo!",
+    "ru": "Разноцветный мир — красивый мир!",
+    "en": "A colorful world is a beautiful world!"
+   },
+   "questions": {
+    "uz": [
+     "Olma qanday rangda?",
+     "Atlasda qaysi ranglarni ko‘rdingiz?"
+    ],
+    "ru": [
+     "Какого цвета яблоко?",
+     "Какие цвета вы увидели на атласе?"
+    ],
+    "en": [
+     "What color is the apple?",
+     "Which colors did you see on the atlas silk?"
+    ]
+   },
+   "activity": {
+    "uz": "Rang ovi: to‘rt rangdagi narsalarni topib, rangiga qarab saralash.",
+    "ru": "Охота за цветами: найти предметы четырёх цветов и разложить их по цвету.",
+    "en": "Color hunt: find things in four colors and sort them by color."
+   },
+   "words": [
+    "atlas",
+    "qizil",
+    "sariq",
+    "yashil",
+    "ko‘k"
+   ],
+   "cat": "bilim",
+   "age": "3–7",
+   "duration": "1:38",
+   "poster": "assets/posters/ep09.jpg",
+   "access": "paid",
+   "price": 10,
+   "sources": {
+    "uz": "videos/uz/ep09.mp4"
+   }
+  },
+  {
+   "id": "ob-10",
+   "sectionId": "odobli-bolajonlar",
+   "order": 10,
+   "published": true,
+   "title": {
+    "uz": "Toza qo‘llar",
+    "ru": "Чистые руки",
+    "en": "Clean Hands"
+   },
+   "desc": {
+    "uz": "Ovqatdan oldin qo‘lni sovun bilan yuvish tartibi: ho‘llash, sovunlash va ko‘pirtirish, chayish, artish; 10 gacha sanash.",
+    "ru": "Мыть руки с мылом перед едой: намочить, намылить и вспенить, смыть, вытереть; счёт до 10.",
+    "en": "Wash hands with soap before eating: wet, soap and lather, rinse, dry; counting to 10."
+   },
+   "slogan": {
+    "uz": "Toza qo‘l — sog‘lom bola!",
+    "ru": "Чистые руки — здоровый ребёнок!",
+    "en": "Clean hands, healthy kids!"
+   },
+   "questions": {
+    "uz": [
+     "Qo‘lni nima bilan yuvamiz?",
+     "Qachon qo‘l yuvamiz?"
+    ],
+    "ru": [
+     "Чем мы моем руки?",
+     "Когда мы моем руки?"
+    ],
+    "en": [
+     "What do we wash our hands with?",
+     "When do we wash our hands?"
+    ]
+   },
+   "activity": {
+    "uz": "Qo‘lyuvgich oldida birga yuvinib, 10 gacha sanash.",
+    "ru": "Вместе вымыть руки у умывальника, считая до 10.",
+    "en": "Wash hands together at the washstand, counting to 10."
+   },
+   "words": [
+    "mikrob",
+    "ko‘pik",
+    "sochiq"
+   ],
+   "cat": "salomat",
+   "age": "3–7",
+   "duration": "1:40",
+   "poster": "assets/posters/ep10.jpg",
+   "access": "paid",
+   "price": 10,
+   "sources": {
+    "uz": "videos/uz/ep10.mp4"
+   }
+  },
+  {
+   "id": "ob-11",
+   "sectionId": "odobli-bolajonlar",
+   "order": 11,
+   "published": true,
+   "title": {
+    "uz": "Olmani bo‘lishamiz",
+    "ru": "Делим яблоки",
+    "en": "Sharing Apples"
+   },
+   "desc": {
+    "uz": "4 ta narsani 2 kishiga «bittadan» berib teng bo‘lish; do‘stlik va adolat.",
+    "ru": "Делить 4 предмета поровну на двоих, «по одному»; дружба и справедливость.",
+    "en": "Share 4 things equally between two, “one each”; friendship and fairness."
+   },
+   "slogan": {
+    "uz": "Teng bo‘lish — do‘stlik belgisi!",
+    "ru": "Делиться поровну — знак дружбы!",
+    "en": "Sharing equally is a sign of friendship!"
+   },
+   "questions": {
+    "uz": [
+     "Bobur avval nechta olma olmoqchi edi?",
+     "Har biriga nechtadan olma tegdi?",
+     "Bobur nega kechirim so‘radi?"
+    ],
+    "ru": [
+     "Сколько яблок Бобур сначала хотел взять?",
+     "Сколько яблок досталось каждому?",
+     "Почему Бобур попросил прощения?"
+    ],
+    "en": [
+     "How many apples did Bobur want to take at first?",
+     "How many apples did each one get?",
+     "Why did Bobur say sorry?"
+    ]
+   },
+   "activity": {
+    "uz": "Ikki qo‘g‘irchoqqa avval 4 ta, keyin 6 ta kubikni bittadan berib bo‘lish.",
+    "ru": "Разделить 4, а затем 6 кубиков между двумя куклами по одному.",
+    "en": "Share 4 and then 6 blocks between two dolls, one each."
+   },
+   "words": [
+    "bo‘lish",
+    "bittadan",
+    "kechirim"
+   ],
+   "cat": "math",
+   "age": "5–7",
+   "duration": "1:26",
+   "poster": "assets/posters/ep11.jpg",
+   "access": "paid",
+   "price": 10,
+   "sources": {
+    "uz": "videos/uz/ep11.mp4"
+   }
+  },
+  {
+   "id": "ob-12",
+   "sectionId": "odobli-bolajonlar",
+   "order": 12,
+   "published": true,
+   "title": {
+    "uz": "Svetofor — do‘stimiz",
+    "ru": "Светофор — наш друг",
+    "en": "The Traffic Light Is Our Friend"
+   },
+   "desc": {
+    "uz": "Svetofor ishoralari (qizil — to‘xta, sariq — kut, yashil — o‘tish mumkin); yo‘ldan piyodalar yo‘lagidan, kattalar qo‘lidan ushlab o‘tish; avval chapga, keyin o‘ngga qarash.",
+    "ru": "Сигналы светофора (красный — стой, жёлтый — жди, зелёный — можно идти); переходить дорогу по пешеходному переходу, держась за руку взрослого.",
+    "en": "Traffic light signals (red — stop, yellow — wait, green — go); cross the road at the crosswalk, holding an adult's hand."
+   },
+   "slogan": {
+    "uz": "Yo‘lda ehtiyot bo‘l — svetoforga qara!",
+    "ru": "На дороге будь осторожен — смотри на светофор!",
+    "en": "Be careful on the road — watch the traffic light!"
+   },
+   "questions": {
+    "uz": [
+     "Qizil chiroq yonsa nima qilamiz?",
+     "Yo‘ldan kim bilan o‘tamiz?"
+    ],
+    "ru": [
+     "Что мы делаем, когда горит красный свет?",
+     "С кем мы переходим дорогу?"
+    ],
+    "en": [
+     "What do we do when the light is red?",
+     "Who do we cross the road with?"
+    ]
+   },
+   "activity": {
+    "uz": "Qog‘ozdan yasalgan svetofor bilan rolli o‘yin.",
+    "ru": "Ролевая игра с бумажным светофором.",
+    "en": "Role play with a paper traffic light."
+   },
+   "words": [
+    "svetofor",
+    "piyodalar yo‘lagi"
+   ],
+   "cat": "xavf",
+   "age": "3–7",
+   "duration": "1:35",
+   "poster": "assets/posters/ep12.jpg",
+   "access": "paid",
+   "price": 10,
+   "sources": {
+    "uz": "videos/uz/ep12.mp4"
+   }
+  }
+ ],
+ "tariffs": [
+  {
+   "id": "pkg-50",
+   "type": "package",
+   "order": 1,
+   "active": true,
+   "bilim": 50,
+   "bonus": 0,
+   "priceUZS": 10000,
+   "name": {
+    "uz": "Boshlang‘ich",
+    "ru": "Стартовый",
+    "en": "Starter"
+   }
+  },
+  {
+   "id": "pkg-120",
+   "type": "package",
+   "order": 2,
+   "active": true,
+   "bilim": 100,
+   "bonus": 20,
+   "priceUZS": 20000,
+   "name": {
+    "uz": "Oilaviy",
+    "ru": "Семейный",
+    "en": "Family"
+   }
+  },
+  {
+   "id": "pkg-300",
+   "type": "package",
+   "order": 3,
+   "active": true,
+   "bilim": 250,
+   "bonus": 50,
+   "priceUZS": 45000,
+   "name": {
+    "uz": "Katta",
+    "ru": "Большой",
+    "en": "Large"
+   }
+  },
+  {
+   "id": "sub-30",
+   "type": "subscription",
+   "order": 4,
+   "active": true,
+   "bilim": 60,
+   "days": 30,
+   "name": {
+    "uz": "Oylik obuna",
+    "ru": "Подписка на месяц",
+    "en": "Monthly pass"
+   }
+  },
+  {
+   "id": "sub-365",
+   "type": "subscription",
+   "order": 5,
+   "active": true,
+   "bilim": 500,
+   "days": 365,
+   "name": {
+    "uz": "Yillik obuna",
+    "ru": "Годовая подписка",
+    "en": "Yearly pass"
+   }
+  }
+ ]
+}

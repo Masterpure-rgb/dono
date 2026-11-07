@@ -1,0 +1,171 @@
+rules_version = '2';
+// Odobli bolajonlar — Cloud Firestore xavfsizlik qoidalari.
+// Asosiy tamoyil: katalog hammaga ochiq, o‘zgartirish faqat admin uchun;
+// foydalanuvchi o‘z bilim balansini faqat haqiqiy xarid bilan kamaytira oladi, hech qachon oshira olmaydi.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function isMe(u) { return signedIn() && request.auth.uid == u; }
+    function userData(u) { return get(/databases/$(database)/documents/users/$(u)).data; }
+    function userAfter(u) { return getAfter(/databases/$(database)/documents/users/$(u)).data; }
+    function isAdmin() {
+      return signedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && userData(request.auth.uid).get('role', 'user') == 'admin';
+    }
+
+    // ---------- ochiq katalog ----------
+    match /settings/{id} { allow read: if true; allow write: if isAdmin(); }
+    match /sections/{id} { allow read: if true; allow write: if isAdmin(); }
+    match /videos/{id}   { allow read: if true; allow write: if isAdmin(); }
+    match /tariffs/{id}  { allow read: if true; allow write: if isAdmin(); }
+
+    // ---------- video havolalari: faqat ko‘rish huquqi borlarga ----------
+    function orgCovers(oid, v, vid) {
+      let o = get(/databases/$(database)/documents/orgs/$(oid)).data;
+      return o.get('active', false) == true
+        && (o.get('start', null) == null || o.start <= request.time)
+        && (o.get('end', null) == null || o.end > request.time)
+        && (o.get('allAccess', false) == true || v.get('sectionId', '') in o.get('sections', []) || vid in o.get('videos', []));
+    }
+    function canWatch(vid) {
+      let v = get(/databases/$(database)/documents/videos/$(vid)).data;
+      let acc = v.get('access', 'free');
+      return acc == 'free' || (
+        signedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && userData(request.auth.uid).get('blocked', false) == false
+        && (acc == 'login'
+          || exists(/databases/$(database)/documents/users/$(request.auth.uid)/owned/$(vid))
+          || (v.get('inSubscription', true) != false && userData(request.auth.uid).get('subUntil', null) != null
+              && userData(request.auth.uid).subUntil > request.time)
+          || (userData(request.auth.uid).get('orgId', null) != null && orgCovers(userData(request.auth.uid).orgId, v, vid))));
+    }
+    match /sources/{vid} {
+      allow read: if isAdmin() || canWatch(vid);
+      allow write: if isAdmin();
+    }
+
+    // ---------- foydalanuvchilar ----------
+    match /users/{u} {
+      allow read: if isMe(u) || isAdmin();
+      allow create: if isMe(u)
+        && request.resource.data.keys().hasOnly(['uid', 'name', 'email', 'photo', 'role', 'bilim', 'orgId', 'joinCode', 'subUntil', 'blocked', 'createdAt', 'lastSeen', 'lastTx'])
+        && request.resource.data.uid == u
+        && request.resource.data.role == 'user'
+        && request.resource.data.blocked == false
+        && request.resource.data.orgId == null && request.resource.data.subUntil == null
+        && request.resource.data.email == request.auth.token.email
+        && (request.resource.data.bilim == 0
+            || (exists(/databases/$(database)/documents/settings/site)
+                && request.resource.data.bilim == get(/databases/$(database)/documents/settings/site).data.get('welcomeBonus', 0)));
+      allow update: if isAdmin() || (isMe(u) && resource.data.get('blocked', false) == false && selfUpdateOk(u));
+      allow delete: if isAdmin();
+
+      function selfUpdateOk(u) {
+        let nd = request.resource.data;
+        let od = resource.data;
+        let ch = nd.diff(od).affectedKeys();
+        return ch.hasOnly(['name', 'lang', 'theme', 'lastSeen', 'bilim', 'lastTx', 'orgId', 'joinCode', 'subUntil'])
+          && (!ch.hasAny(['lastSeen']) || nd.lastSeen == request.time)
+          && (!ch.hasAny(['bilim', 'lastTx']) || spendOk(u, nd, od))
+          && (!ch.hasAny(['subUntil']) || subOk(nd, od))
+          && (!ch.hasAny(['orgId', 'joinCode']) || orgOk(nd));
+      }
+      // bilim faqat kamayishi va haqiqiy xaridga mos bo‘lishi kerak
+      function spendOk(u, nd, od) {
+        let spent = od.bilim - nd.bilim;
+        return spent > 0 && nd.lastTx is map && (
+          (nd.lastTx.kind == 'video'
+            && !exists(/databases/$(database)/documents/users/$(u)/owned/$(nd.lastTx.id))
+            && existsAfter(/databases/$(database)/documents/users/$(u)/owned/$(nd.lastTx.id))
+            && get(/databases/$(database)/documents/videos/$(nd.lastTx.id)).data.get('price', 0) == spent)
+          || (nd.lastTx.kind == 'sub' && subTariffOk(nd.lastTx.id, spent)));
+      }
+      function subTariffOk(tid, spent) {
+        let tr = get(/databases/$(database)/documents/tariffs/$(tid)).data;
+        return tr.type == 'subscription' && tr.get('active', true) == true && tr.bilim == spent;
+      }
+      function subOk(nd, od) {
+        let tr = get(/databases/$(database)/documents/tariffs/$(nd.lastTx.id)).data;
+        let active = od.get('subUntil', null) != null && od.subUntil > request.time;
+        let base = active ? od.subUntil : request.time;
+        let target = base + duration.value(tr.days, 'd');
+        return nd.lastTx.kind == 'sub' && od.bilim - nd.bilim == tr.bilim
+          && nd.subUntil > target - duration.value(15, 'm') && nd.subUntil < target + duration.value(15, 'm');
+      }
+      function orgOk(nd) {
+        return (nd.get('orgId', null) == null && nd.get('joinCode', null) == null)
+          || (nd.joinCode is string && exists(/databases/$(database)/documents/joinCodes/$(nd.joinCode))
+              && get(/databases/$(database)/documents/joinCodes/$(nd.joinCode)).data.orgId == nd.orgId);
+      }
+
+      match /owned/{vid} {
+        allow read: if isMe(u) || isAdmin();
+        allow create: if isMe(u)
+          && request.resource.data.keys().hasOnly(['at', 'price'])
+          && userAfter(u).lastTx.kind == 'video' && userAfter(u).lastTx.id == vid
+          && userData(u).bilim - userAfter(u).bilim == get(/databases/$(database)/documents/videos/$(vid)).data.get('price', 0);
+        allow update, delete: if isAdmin();
+      }
+    }
+
+    // ---------- bilim tranzaksiyalari ----------
+    match /ledger/{id} {
+      allow read: if isAdmin() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow create: if isAdmin() || (signedIn() && request.resource.data.uid == request.auth.uid && (
+          (id == 'bonus_' + request.auth.uid && request.resource.data.type == 'bonus'
+            && !exists(/databases/$(database)/documents/users/$(request.auth.uid))
+            && userAfter(request.auth.uid).bilim == request.resource.data.amount)
+          || (request.resource.data.type in ['purchase', 'subscription']
+            && request.resource.data.amount == userAfter(request.auth.uid).bilim - userData(request.auth.uid).bilim)));
+      allow update, delete: if isAdmin();
+    }
+
+    // ---------- to‘lov (bilim to‘ldirish) so‘rovlari ----------
+    match /topups/{id} {
+      allow read: if isAdmin() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.keys().hasOnly(['uid', 'name', 'email', 'tariffId', 'bilim', 'priceUZS', 'note', 'status', 'at'])
+        && packageOk(request.resource.data);
+      allow update, delete: if isAdmin();
+      function packageOk(x) {
+        let tr = get(/databases/$(database)/documents/tariffs/$(x.tariffId)).data;
+        return tr.type == 'package' && tr.get('active', true) == true
+          && x.bilim == tr.bilim + tr.get('bonus', 0) && x.priceUZS == tr.get('priceUZS', 0);
+      }
+    }
+
+    // ---------- bog‘chalar (shartnomalar) ----------
+    match /orgs/{oid} {
+      allow get: if isAdmin() || (signedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+                                  && userData(request.auth.uid).get('orgId', null) == oid);
+      allow list, write: if isAdmin();
+    }
+    match /joinCodes/{code} {
+      allow get: if signedIn();
+      allow list, write: if isAdmin();
+    }
+
+    // ---------- monitoring ----------
+    function anonOrMe(x) { return x.get('uid', null) == null || (signedIn() && x.uid == request.auth.uid); }
+    match /views/{id} {
+      allow create: if request.resource.data.keys().hasOnly(['videoId', 'lang', 'sec', 'completed', 'device', 'kind', 'uid', 'at'])
+        && request.resource.data.at == request.time && anonOrMe(request.resource.data)
+        && request.resource.data.videoId is string && request.resource.data.videoId.size() < 80;
+      allow read, delete: if isAdmin();
+    }
+    match /errors/{id} {
+      allow create: if request.resource.data.keys().hasOnly(['msg', 'where', 'url', 'ua', 'uid', 'at'])
+        && request.resource.data.at == request.time && anonOrMe(request.resource.data)
+        && request.resource.data.msg is string && request.resource.data.msg.size() <= 300;
+      allow read, delete: if isAdmin();
+    }
+    match /presence/{sid} {
+      allow create, update: if request.resource.data.keys().hasOnly(['at', 'page', 'uid'])
+        && request.resource.data.at == request.time && anonOrMe(request.resource.data)
+        && request.resource.data.page is string && request.resource.data.page.size() <= 80;
+      allow read, delete: if isAdmin();
+    }
+  }
+}
