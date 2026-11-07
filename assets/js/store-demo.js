@@ -18,7 +18,7 @@ function fresh(seed) {
   return {
     settings: clone(seed.settings), categories: clone(seed.categories),
     sections: m(clone(seed.sections)), videos: m(clone(seed.videos)), tariffs: m(clone(seed.tariffs)),
-    users: {}, owned: {}, ledger: [], topups: {}, orgs: {}, joinCodes: {}, views: [], errors: [], presence: {},
+    users: {}, owned: {}, ledger: [], topups: {}, orgs: {}, joinCodes: {}, views: [], errors: [], presence: {}, seedVersion: seed.version || 1,
   };
 }
 function curUid() { return localStorage.getItem(SKEY); }
@@ -34,6 +34,14 @@ export const store = {
     seedCache = seed;
     db = load();
     if (!db || !db.settings) { db = fresh(seed); save(); }
+    else if ((seed.version || 1) > (db.seedVersion || 1)) {
+      // seed yangilangan: mavjud videolarga yangi til manbalarini qo‘shamiz (admin o‘zgartirishlari saqlanadi)
+      for (const sv of seed.videos || []) {
+        const v = db.videos && db.videos[sv.id];
+        if (v) v.sources = { ...(sv.sources || {}), ...(v.sources || {}) };
+      }
+      db.seedVersion = seed.version; save();
+    }
     if (!sessionStorage.getItem(SID)) sessionStorage.setItem(SID, uid("s_"));
     // boshqa varaqda o‘zgarsa — yangilash
     window.addEventListener("storage", (e) => { if (e.key === KEY) { db = load() || db; emit(); } });

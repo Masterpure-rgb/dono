@@ -84,6 +84,8 @@ Har bir multfilm seriali o‘z **bo‘limi**ga ega. Masalan, «Odobli bolajonlar
 
 GitHub’da bitta fayl 100 MB dan oshmasligi kerak. Videolarni 720p, H.264 formatida saqlash tavsiya etiladi.
 
+**Mavjud qismga yangi til qo‘shish.** Masalan, `videos/ru/ep02.mp4` faylini yuklang. So‘ng **Admin → Videolar → Tahrirlash** oynasida RU manbasiga `videos/ru/ep02.mp4` deb yozing. Demo rejimda buning o‘rniga `python3 tools/make_seed.py` ni qayta ishga tushirish kifoya: skript yangi fayllarni o‘zi topadi.
+
 ## 5. «Bilim» valyutasi, tariflar va to‘lovlar
 
 - **Bilim** — platforma ichki birligi. Yangi foydalanuvchiga xush kelibsiz bonusi beriladi (sozlamalarda o‘zgartiriladi).
@@ -167,4 +169,5 @@ data/seed.json          — boshlang‘ich katalog (12 qism, tariflar)
 videos/uz|ru|en/        — video fayllar
 firestore.rules         — Firestore xavfsizlik qoidalari
 tools/make_seed.py      — seed.json ni qayta yaratish
+tools/episodes_uz.json  — 12 qismning o‘zbekcha ma’lumotlari (seed manbasi)
 ```

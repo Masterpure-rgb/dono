@@ -1,0 +1,260 @@
+[
+ {
+  "n": 1,
+  "t": "Salom — odob boshi",
+  "cat": "odob",
+  "age": "3–7",
+  "dur": "1:09",
+  "goal": "Kattaga birinchi bo‘lib, qo‘lni ko‘ksiga qo‘yib salom berish. Qoida: kichik kattaga, yurgan o‘tirganga salom beradi.",
+  "words": [
+   "salom",
+   "assalomu alaykum",
+   "barakalla"
+  ],
+  "shior": "Kattalarga salom bering!",
+  "chant": "Kattaga salom berib, / qo‘lni ko‘ksga qo‘yamiz. / Odobli bola bo‘lib, / hammani xursand qilamiz!",
+  "qs": [
+   "Bobur nega to‘xtadi?",
+   "Salom berganda qo‘l qayerga qo‘yiladi?",
+   "Kim birinchi salom beradi: kichikmi yoki kattami?"
+  ],
+  "act": "Bolalar juft bo‘lib salomlashish o‘yinini o‘ynaydi."
+ },
+ {
+  "n": 2,
+  "t": "Erta turamiz!",
+  "cat": "kun",
+  "age": "3–7",
+  "dur": "1:46",
+  "goal": "Ertalabki 5 qadamni tartib bilan bajarish: turish va ko‘rpani yig‘ish, yuvinish, tish yuvish, badantarbiya, nonushta. Qo‘shimcha: 1 dan 5 gacha sanash.",
+  "words": [
+   "tong",
+   "badantarbiya",
+   "nonushta",
+   "Osh bo‘lsin!"
+  ],
+  "shior": "Kunni tartib bilan boshlaymiz!",
+  "chant": "Bir — turamiz, ikki — yuvamiz, / uch — tishlarni tozalaymiz, / to‘rt — sakraymiz, besh — yeymiz, / kunni quvnoq boshlaymiz!",
+  "qs": [
+   "Ertalab birinchi nima qilamiz?",
+   "Tishni qanday yuvamiz?"
+  ],
+  "act": "5 ta rasmni ertalabki tartib bo‘yicha joylashtirish."
+ },
+ {
+  "n": 3,
+  "t": "Suv — hayot",
+  "cat": "salomat",
+  "age": "3–7",
+  "dur": "1:44",
+  "goal": "Chanqaganda toza suv ichish va suvni isrof qilmaslik (jo‘mrakni berkitish).",
+  "words": [
+   "chanqoq",
+   "qultum",
+   "jo‘mrak",
+   "tejash"
+  ],
+  "shior": "Suv — hayot, uni asraylik!",
+  "chant": "Chanqasam — suv ichaman, / shoshmay, shoshmay, qultumlab. / Jo‘mrakni berkitaman, / suvni asrab, tejab!",
+  "qs": [
+   "Gul nega so‘lib qoldi?",
+   "Chanqaganda nima ichamiz?",
+   "Jo‘mrak ochiq qolsa nima bo‘ladi?"
+  ],
+  "act": "Qo‘lyuvgich oldida jo‘mrakni ochib-berkitishni mashq qilish, bir stakan suvni qultumlab ichish.",
+  "flagAct": true
+ },
+ {
+  "n": 4,
+  "t": "Buvijonning nonlari",
+  "cat": "math",
+  "age": "5–7",
+  "dur": "1:55",
+  "goal": "1 dan 5 gacha sanash va 5 ichida qo‘shish: 2 + 1 = 3, 3 + 2 = 5. Tarbiyaviy maqsad: nonni e’zozlash, yerga tushgan nonni ko‘tarib, baland joyga qo‘yish.",
+  "words": [
+   "tandir",
+   "savat",
+   "qo‘shamiz",
+   "nechta bo‘ldi?"
+  ],
+  "shior": "Nonni e’zozlaymiz!",
+  "chant": "Bir non, ikki non, uch non — issiq non! / Ikkitasi qo‘shilsa — besh bo‘ldi, shirin non!",
+  "qs": [
+   "Savatda nechta non bo‘ldi?",
+   "Non yerga tushsa nima qilamiz?"
+  ],
+  "act": "Haqiqiy narsalar (qoshiq, kubik, o‘yinchoq non) bilan 2 + 1 va 3 + 2 ni bajarish."
+ },
+ {
+  "n": 5,
+  "t": "Chumchuqlar sanog‘i",
+  "cat": "math",
+  "age": "5–7",
+  "dur": "1:38",
+  "goal": "5 ichida ayirish: 5 − 2 = 3, 3 − 1 = 2; «qoldi» so‘zining ma’nosi. Tarbiyaviy maqsad: qushlarni qo‘rqitmaslik, ularga don va suv qo‘yish.",
+  "words": [
+   "chumchuq",
+   "shox",
+   "uchib ketdi",
+   "qoldi",
+   "ayiramiz"
+  ],
+  "shior": "Qushlarga g‘amxo‘rlik qilamiz!",
+  "chant": "Beshta chumchuq shoxda, / ikkitasi uchdi — pirr! / Shoxda qoldi uchtasi, / sanab ko‘ring: bir, ikki, uch!",
+  "qs": [
+   "Shoxda nechta chumchuq qoldi?",
+   "Qushlarga qanday g‘amxo‘rlik qilamiz?"
+  ],
+  "act": "Barmoq o‘yini: «5 ta barmoq — 2 tasini buk — nechta qoldi?»"
+ },
+ {
+  "n": 6,
+  "t": "Shirin uyqu",
+  "cat": "kun",
+  "age": "3–7",
+  "dur": "1:34",
+  "goal": "Kechki tartib: o‘yinchoqlarni yig‘ish, tish yuvish, uxlashdan oldin telefonni qo‘yish, erta yotish. Qo‘shimcha: 4 gacha sanash.",
+  "words": [
+   "kech",
+   "oy",
+   "yulduz",
+   "alla",
+   "Xayrli tun!"
+  ],
+  "shior": "Erta yotgan erta turar!",
+  "chant": "O‘yinchoqlar joyida, / tishim toza, oppoq. / Ko‘zlarimni yumaman — / xayrli tun, Oppoq!",
+  "qs": [
+   "Uxlashdan oldin nimalar qilamiz?",
+   "Nega telefon ham «uxlaydi»?"
+  ],
+  "act": "Ketma-ketlikni rasmlar bilan tuzish: o‘yinchoq → tish → alla → uyqu. Bu dars 2-dars bilan juft: biri tongni, biri kechni o‘rgatadi."
+ },
+ {
+  "n": 7,
+  "t": "Bozorda taqqoslaymiz",
+  "cat": "math",
+  "age": "3–7",
+  "dur": "1:38",
+  "goal": "Narsalarni kattaligi (katta–kichik) va miqdori (ko‘p–oz) bo‘yicha taqqoslash; 5 gacha sanash.",
+  "words": [
+   "bozor",
+   "katta",
+   "kichik",
+   "ko‘p",
+   "oz"
+  ],
+  "shior": "Kattaga hurmat, kichikka izzat!",
+  "chant": "Katta qovun, kichik qovun, / ko‘p olma-yu, oz olma. / Taqqoslaymiz, sanaymiz — / bozorda ham o‘rganamiz!",
+  "qs": [
+   "Qaysi qovun katta?",
+   "Qaysi likopchada olma ko‘p?",
+   "Bozorda sotuvchiga nima deymiz?"
+  ],
+  "act": "Ikki likopchaga turli miqdorda meva yoki kubik qo‘yib, «ko‘p–oz»ni; ikki xil kattalikdagi narsalarni «katta–kichik» deb taqqoslash."
+ },
+ {
+  "n": 8,
+  "t": "Somsa — uchburchak",
+  "cat": "bilim",
+  "age": "3–7",
+  "dur": "2:10",
+  "goal": "Doira, uchburchak va to‘rtburchakni tanish; tomonlarini sanash.",
+  "words": [
+   "doira",
+   "uchburchak",
+   "to‘rtburchak"
+  ],
+  "shior": "Atrofga qara — shaklni top!",
+  "chant": "Non — doira, dumaloq, / somsa — uchburchak, / deraza — to‘rtburchak. / Shakllar har yerda bor!",
+  "qs": [
+   "Somsaning nechta tomoni bor?",
+   "Xonamizda qaysi narsalar doira shaklida?"
+  ],
+  "act": "Shakl ovi: xonadan doira, uchburchak va to‘rtburchak shaklidagi narsalarni topish; havoda barmoq bilan doira chizish.",
+  "note": "To‘rtburchak deraza misolida ko‘rsatilgan; kvadrat va to‘g‘ri to‘rtburchak farqi berilmagan."
+ },
+ {
+  "n": 9,
+  "t": "Atlas ranglari",
+  "cat": "bilim",
+  "age": "3–7",
+  "dur": "1:38",
+  "goal": "To‘rt rangni (qizil, sariq, yashil, ko‘k) tanish va nomlash; milliy mato — atlas bilan tanishish.",
+  "words": [
+   "atlas",
+   "qizil",
+   "sariq",
+   "yashil",
+   "ko‘k"
+  ],
+  "shior": "Rang-barang dunyo — go‘zal dunyo!",
+  "chant": "Qizil, sariq, yashil, ko‘k — / atlasda ranglar ko‘p! / Ranglarni topamiz, / hammasini bilamiz!",
+  "qs": [
+   "Olma qanday rangda?",
+   "Atlasda qaysi ranglarni ko‘rdingiz?"
+  ],
+  "act": "Rang ovi: to‘rt rangdagi narsalarni topib, rangiga qarab saralash."
+ },
+ {
+  "n": 10,
+  "t": "Toza qo‘llar",
+  "cat": "salomat",
+  "age": "3–7",
+  "dur": "1:40",
+  "goal": "Ovqatdan oldin qo‘lni sovun bilan yuvish tartibi: ho‘llash, sovunlash va ko‘pirtirish, chayish, artish; 10 gacha sanash.",
+  "words": [
+   "mikrob",
+   "ko‘pik",
+   "sochiq"
+  ],
+  "shior": "Toza qo‘l — sog‘lom bola!",
+  "chant": "Suv bilan ho‘llaymiz, / sovun bilan yuvamiz, / o‘ngacha sanaymiz — / qo‘llar toza bo‘ladi!",
+  "qs": [
+   "Qo‘lni nima bilan yuvamiz?",
+   "Qachon qo‘l yuvamiz?"
+  ],
+  "act": "Qo‘lyuvgich oldida birga yuvinib, 10 gacha sanash.",
+  "note": "Rolikda 10 gacha sanash taxminan 15 soniya davom etadi. CDC qo‘lni kamida 20 soniya ishqalashni tavsiya qiladi [12]. Amalda 10 gacha ikki marta sanash maqsadga muvofiq."
+ },
+ {
+  "n": 11,
+  "t": "Olmani bo‘lishamiz",
+  "cat": "math",
+  "age": "5–7",
+  "dur": "1:26",
+  "goal": "4 ta narsani 2 kishiga «bittadan» berib teng bo‘lish; do‘stlik va adolat.",
+  "words": [
+   "bo‘lish",
+   "bittadan",
+   "kechirim"
+  ],
+  "shior": "Teng bo‘lish — do‘stlik belgisi!",
+  "chant": "Bitta senga, bitta menga — / olmalarni bo‘lamiz. / Ikki-ikki, teng bo‘ldi — / biz do‘stona yashaymiz!",
+  "qs": [
+   "Bobur avval nechta olma olmoqchi edi?",
+   "Har biriga nechtadan olma tegdi?",
+   "Bobur nega kechirim so‘radi?"
+  ],
+  "act": "Ikki qo‘g‘irchoqqa avval 4 ta, keyin 6 ta kubikni bittadan berib bo‘lish."
+ },
+ {
+  "n": 12,
+  "t": "Svetofor — do‘stimiz",
+  "cat": "xavf",
+  "age": "3–7",
+  "dur": "1:35",
+  "goal": "Svetofor ishoralari (qizil — to‘xta, sariq — kut, yashil — o‘tish mumkin); yo‘ldan piyodalar yo‘lagidan, kattalar qo‘lidan ushlab o‘tish; avval chapga, keyin o‘ngga qarash.",
+  "words": [
+   "svetofor",
+   "piyodalar yo‘lagi"
+  ],
+  "shior": "Yo‘lda ehtiyot bo‘l — svetoforga qara!",
+  "chant": "Qizil — to‘xta, sariq — kut, / yashil — yo‘l ochiq! / Chapga, o‘ngga qaraymiz, / qo‘lni mahkam ushlaymiz!",
+  "qs": [
+   "Qizil chiroq yonsa nima qilamiz?",
+   "Yo‘ldan kim bilan o‘tamiz?"
+  ],
+  "act": "Qog‘ozdan yasalgan svetofor bilan rolli o‘yin.",
+  "note": "Rolikda piyodalar svetofori emas, uch rangli transport svetofori ko‘rsatilgan. Mazmun yo‘l harakati qoidalarining rasmiy matni bilan solishtirilmagan; mutaxassis tekshiruvi tavsiya etiladi."
+ }
+]

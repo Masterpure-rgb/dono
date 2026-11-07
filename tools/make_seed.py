@@ -1,9 +1,9 @@
 """data/seed.json faylini yaratadi: bo'limlar, 12 qism (uz/ru/en), tariflar, sozlamalar.
-Ishga tushirish: python3 tools/make_seed.py <eski L.json yo'li>"""
+Ishga tushirish: python3 tools/make_seed.py  (manba: tools/episodes_uz.json)"""
 import json, sys, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-L = json.load(open(sys.argv[1]))
+L = json.load(open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'episodes_uz.json')))
 
 TITLES = {
     1: ("Привет — начало вежливости", "A Greeting Starts Good Manners"),
@@ -128,7 +128,8 @@ for e in L:
 videos[2]["desc"]["uz"] = "Chanqaganda toza suvni o‘tirib, qultumlab ichish va suvni isrof qilmaslik (jo‘mrakni berkitish)."
 
 seed = {
-    "version": 1,
+    # yangi til fayli qo‘shilsa versiya o‘zi oshadi — demo rejimdagi brauzerlar yangi manbalarni oladi
+    "version": 2 + sum(len(v["sources"]) - 1 for v in videos),
     "settings": {
         "siteName": {"uz": "Odobli bolajonlar", "ru": "Вежливые детки", "en": "Polite Little Kids"},
         "welcomeBonus": 20, "parentGate": True, "autoplayNext": False, "defaultLang": "uz",
